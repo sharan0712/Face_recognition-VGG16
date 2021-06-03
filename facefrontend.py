@@ -58,23 +58,23 @@ while True:
         name="None matching"
         
         if(pred[0][0]>0.5):
-            name='prachi'
+            name='Name1'
             cv2.putText(frame,name, (50, 50), cv2.FONT_HERSHEY_COMPLEX, 1, (0,255,0), 2)
             iframe=cv2.putText(frame,name, (50, 50), cv2.FONT_HERSHEY_COMPLEX, 1, (0,255,0), 2)
             file_name_path = 'Images/' + str(count) + '.jpg'
             cv2.imwrite(file_name_path, iframe)
         elif (pred[0][1]>0.5):
-            name='Sai'
+            name='Name2'
             cv2.putText(frame,name, (50, 50), cv2.FONT_HERSHEY_COMPLEX, 1, (0,255,0), 2)
             file_name_path = 'Images/' + str(count) + '.jpg'
             cv2.imwrite(file_name_path, frame)
         elif (pred[0][2]>0.5):
-            name='Shafi'
+            name='Name3'
             cv2.putText(frame,name, (50, 50), cv2.FONT_HERSHEY_COMPLEX, 1, (0,255,0), 2)
             file_name_path = 'Images/' + str(count) + '.jpg'
             cv2.imwrite(file_name_path, frame)
         elif (pred[0][3]>0.5):
-            name='Sharan'
+            name='Name4'
             cv2.putText(frame,name, (50, 50), cv2.FONT_HERSHEY_COMPLEX, 1, (0,255,0), 2)
             file_name_path = 'Images/' + str(count) + '.jpg'
             cv2.imwrite(file_name_path, frame)
